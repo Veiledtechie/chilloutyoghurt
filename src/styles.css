@@ -102,7 +102,7 @@ body {
   color: #01a6e1;
 }
 
-@media only screen and (max-width: 900px) {
+@media (max-width: 900px) {
   .top-nav-bar {
     height: 118px;
     border: bottom 0;
@@ -121,5 +121,6 @@ body {
   .menu-bar ul li {
     height: 57px;
     width: 100%;
+    padding: 15px 0;
   }
 }
