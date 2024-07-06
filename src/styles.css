@@ -77,7 +77,7 @@ body {
   font-size: 14px;
   float: left;
   z-index: 2;
-  background-color: #ddd;
+  background-color: white;
 }
 .side-menu ul {
   margin-left: 10px;
@@ -102,6 +102,29 @@ body {
   color: #01a6e1;
 }
 
+.side-menu ul li:hover ul {
+  display: block;
+  height: 400px;
+  margin-left: 14%;
+  padding: 0 100px 10px 10px;
+  position: fixed;
+  background: white;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+.fa-angle-right {
+  margin-top: 4px;
+  margin-right: 8px;
+  float: right;
+}
+
+#menu-btn,
+#close-btn {
+  font-size: 30px;
+  margin: 10px;
+  color: #01a6e1;
+  display: none;
+}
 @media (max-width: 900px) {
   .top-nav-bar {
     height: 118px;
@@ -122,5 +145,24 @@ body {
     height: 57px;
     width: 100%;
     padding: 15px 0;
+  }
+
+  .side-menu {
+    width: 34%;
+    z-index: 20;
+    top: 133px;
+    position: fixed;
+    font-size: 12px;
+    display: none;
+  }
+  .side-menu ul li ul {
+    top: 133px;
+  }
+
+  .side-menu ul li:hover ul {
+    margin-left: 33%;
+  }
+  #menu-btn {
+    display: block;
   }
 }
